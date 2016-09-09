@@ -1,25 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="animate.css">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="stylesheets/animate.css">
+    <link rel="stylesheet" href="stylesheets/form.css">
+    <link rel="stylesheet" href="stylesheets/navbar.css">
 
     <meta charset="UTF-8">
     <title>Portfolio</title>
+
 </head>
-<body>
+<body id="body">
+
+    <div id="body-one">
+            <div class="box-name animated fadeInUp">
+
+                <h1>
+                    <span class="animated fadeInUp">ANDREW<br>WARD</span>
+                </h1>
+
+            </div>
+    </div>
+
+
+
+    <div id="body-two">
+
+        <div class="box-form animated fadeInUp2">
+
+            <header class="animated fadeInRight">EMAIL ME</header>
+
+
+            <form id="form" class="topBefore animated fadeInUp" action="#" >
+
+                <input id="name" type="name" placeholder="NAME">
+                <input id="email" type="email" placeholder="E-MAIL">
+                <textarea id="message" type="text" placeholder="MESSAGE"></textarea>
+                <input id="submit" type="submit" value="SEND" style="text-decoration: underline;">
+
+            </form>
+        </div>
+    </div>
+
     <div class='navbar animated fadeInLeft'>
-        <span><a href="#" class="active">HOME</a></span>
-        <span><a href="#">ABOUT</a></span>
-        <span><a href="#">RESUME</a></span>
-        <span><a href="#">CONTACT</a></span>
+        <a href="#body-one" class="active"><span>HOME</span></a>
+        <a href="#"><span>ABOUT</span></a>
+        <a href="#"><span>RESUME</span></a>
+        <a href="#body-two"><span>CONTACT</span></a>
+        <span class="themes"><img src="images/wheel.png" height="30px" width="30px"/></span>
     </div>
-    <div class="box-name animated fadeInUp">
-        <h1>
-            <span class="animated fadeInUp">ANDREW<br>WARD</span>
-        </h1>
 
-
-    </div>
 </body>
 </html>
