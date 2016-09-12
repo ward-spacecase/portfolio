@@ -6,6 +6,9 @@
     <link rel="stylesheet" href="stylesheets/form.css">
     <link rel="stylesheet" href="stylesheets/navbar.css">
 
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>                                         <!--http://kenwheeler.github.io/slick/-->
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
     <meta charset="UTF-8">
     <title>Portfolio</title>
 
@@ -18,13 +21,31 @@
                 <h1>
                     <span class="animated fadeInUp">ANDREW<br>WARD</span>
                 </h1>
+                <span class="foot">
+                    <span class="">Computer Charmer</span> &nbsp; &nbsp; | &nbsp; &nbsp;
+                    <span>Website Whisperer</span>
+                </span>
 
             </div>
     </div>
 
-
-
     <div id="body-two">
+
+        <div class="about-Slider">
+            <div id="caro1">
+                <img src="images/carousel1.jpg" alt="Picture" width="100%">
+                <h1>About Me</h1>
+            </div>
+            <div id="caro2">
+                <img src="images/carousel2.jpg" alt="Picture" width="100%">
+            </div>
+            <div id="caro3">
+                <img src="images/carousel3.jpg" alt="Picture" width="100%">
+            </div>
+        </div>
+    </div>
+
+    <div id="body-four">
 
         <div class="box-form animated fadeInUp2">
 
@@ -43,12 +64,25 @@
     </div>
 
     <div class='navbar animated fadeInLeft'>
-        <a href="#body-one" class="active"><span>HOME</span></a>
-        <a href="#"><span>ABOUT</span></a>
+        <a href="#body-one"><span>HOME</span></a>
+        <a href="#body-two"><span>ABOUT</span></a>
         <a href="#"><span>RESUME</span></a>
-        <a href="#body-two"><span>CONTACT</span></a>
+        <a href="#"><span>PORTFOLIO</span></a>
+        <a href="#body-four"><span>CONTACT</span></a>
         <span class="themes"><img src="images/wheel.png" height="30px" width="30px"/></span>
     </div>
 
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.about-Slider').slick({
+                'setting-name': 'setting-value',
+                arrows: true
+        });
+        });
+    </script>
 </body>
 </html>

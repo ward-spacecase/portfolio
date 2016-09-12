@@ -36,6 +36,5 @@
 }
 .navbar .themes:hover img {
     transform: rotate(280deg);
-    -webkit-animation-name: bounce;
 }
 

@@ -4,12 +4,12 @@
 
  #body
  {
-     height: 2500px;
+     height: 2900px;
     background-color: #3b4242;
     margin: 0;
     padding: 0;
 }
-#body-one, #body-two {
+#body-one, #body-two, #body-four {
     min-width: 150px;
     height: 850px;          /*bootstrap to get screen height on load*/
     padding: 0;
@@ -38,6 +38,15 @@
     background-color: white;
     overflow: hidden;
 }
+.box-name .foot {
+    padding: 5px 15px 5px 15px;
+    letter-spacing: normal;
+    background-color: lightgray;
+    color: #444d6b;
+    font-size: 20px;
+    opacity: 0.9;
+}
+
 .box-name h1 span {
     margin-left: 15px;
     font-size: 145px;
@@ -48,12 +57,16 @@
     background-position: center -260px;
 }
 
-#body-two {
+#body-four {
     background-color: #726659;
     margin-top: 100px;
     overflow: hidden;
 }
-
+#body-two {
+    background-color: #4F4545;
+    margin-top: 100px;
+    overflow: hidden;
+}
 
 a {
     color: inherit;
@@ -71,4 +84,6 @@ a {
     background-color: #708090;
     font-family: "Apple SD Gothic Neo";
 }
+
+
 
