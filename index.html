@@ -6,16 +6,18 @@
     <link rel="stylesheet" href="stylesheets/form.css">
     <link rel="stylesheet" href="stylesheets/navbar.css">
 
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>                                         <!--http://kenwheeler.github.io/slick/-->
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" href="slick/slick.css"/>                                         <!--http://kenwheeler.github.io/slick/-->
+    <link rel="stylesheet" href="slick/slick-theme.css"/>
+
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 
     <meta charset="UTF-8">
     <title>Portfolio</title>
-
 </head>
+
 <body id="body">
 
-    <div id="body-one">
+    <section id="body-one">
             <div class="box-name animated fadeInUp">
 
                 <h1>
@@ -27,25 +29,32 @@
                 </span>
 
             </div>
-    </div>
+            <div class="arrowCircle">
+                <div class="arrowBox">
 
-    <div id="body-two">
+                </div>
+            </div>
+
+    </section>
+
+    <section id="body-two">
 
         <div class="about-Slider">
+
             <div id="caro1">
-                <img src="images/carousel1.jpg" alt="Picture" width="100%">
-                <h1>About Me</h1>
+                <span>About Me</span>
             </div>
             <div id="caro2">
-                <img src="images/carousel2.jpg" alt="Picture" width="100%">
+                <span>Other stuff</span>
             </div>
             <div id="caro3">
-                <img src="images/carousel3.jpg" alt="Picture" width="100%">
+                <span>ya</span>
             </div>
         </div>
-    </div>
 
-    <div id="body-four">
+    </section>
+
+    <section id="body-four">
 
         <div class="box-form animated fadeInUp2">
 
@@ -61,15 +70,14 @@
 
             </form>
         </div>
-    </div>
+    </section>
 
     <div class='navbar animated fadeInLeft'>
-        <a href="#body-one"><span>HOME</span></a>
-        <a href="#body-two"><span>ABOUT</span></a>
+        <a href="#body-one" onclick="javascript:clickStuff('body-one')"><span>HOME</span></a>
+        <a href="#body-two" onclick="javascript:clickStuff('body-two')"><span>ABOUT</span></a>
         <a href="#"><span>RESUME</span></a>
         <a href="#"><span>PORTFOLIO</span></a>
-        <a href="#body-four"><span>CONTACT</span></a>
-        <span class="themes"><img src="images/wheel.png" height="30px" width="30px"/></span>
+        <a href="#body-four" onclick="javascript:clickStuff('body-four')"><span>CONTACT</span></a>
     </div>
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
@@ -80,9 +88,22 @@
         $(document).ready(function(){
             $('.about-Slider').slick({
                 'setting-name': 'setting-value',
-                arrows: true
+                arrows: true,
+                dots: true
         });
         });
     </script>
+    <script type="text/javascript">
+
+            function clickStuff(element) {
+                document.getElementById(element).className += 'animated ' + 'fadeIn ';
+                setTimeout(function () {
+                    document.getElementById(element).className = '';
+                }, 500);
+
+            }
+
+    </script>
+
 </body>
 </html>

@@ -4,14 +4,14 @@
 
  #body
  {
-     height: 2900px;
+     height: 302.7vh;
     background-color: #3b4242;
     margin: 0;
     padding: 0;
 }
 #body-one, #body-two, #body-four {
     min-width: 150px;
-    height: 850px;          /*bootstrap to get screen height on load*/
+    height: 90vh;          /*bootstrap to get screen height on load*/
     padding: 0;
     width: 100%;
 }
@@ -50,7 +50,7 @@
 .box-name h1 span {
     margin-left: 15px;
     font-size: 145px;
-    background: url(../images/background.jpg) no-repeat;
+    background: url(../images/background.jpg) no-repeat center top;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     display: block;
@@ -63,7 +63,7 @@
     overflow: hidden;
 }
 #body-two {
-    background-color: #4F4545;
+    background-color: #676f68;
     margin-top: 100px;
     overflow: hidden;
 }
@@ -84,6 +84,26 @@ a {
     background-color: #708090;
     font-family: "Apple SD Gothic Neo";
 }
+.about-Slider {
+    width: 90%;
+    margin: 0 auto;
+}
+#caro1 {
+    height: 850px;
+    width: 100%;
+   background: black url(../images/carousel1.jpg) top left no-repeat;
+    background-size: 100%;
+}
+#caro2 {
 
-
-
+    background: black url(../images/carousel2.jpg) top left no-repeat;
+    background-size: 100%;
+    height: 850px;
+    width: 100%;
+}
+#caro3 {
+    height: 850px;
+    width: 100%;
+    background: black url(../images/carousel3.jpg) top left no-repeat;
+    background-size: 100%;
+}
