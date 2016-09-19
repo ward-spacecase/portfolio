@@ -85,6 +85,7 @@ a {
     font-family: "Apple SD Gothic Neo";
 }
 .about-Slider {
+    color: black;
     width: 90%;
     margin: 0 auto;
 }
@@ -93,6 +94,20 @@ a {
     width: 100%;
    background: black url(../images/carousel1.jpg) top left no-repeat;
     background-size: 100%;
+    text-align: center;
+}
+#caro1 h1 {
+    margin-left: 500px;
+    margin-right: 500px;
+    padding: 25px 0 25px 0;
+    background: rgba(103, 111, 104, 0.5);
+}
+#caro1 p {
+    border-radius: 24px;
+    background: rgba(103, 111, 104, 0.3);
+    padding: 0 50px 0 50px;
+    margin: 40px 150px 0 150px;
+    line-height: 50px;
 }
 #caro2 {
 
@@ -107,3 +122,4 @@ a {
     background: black url(../images/carousel3.jpg) top left no-repeat;
     background-size: 100%;
 }
+
